@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to a Schideron gateway",
+        "description": "Relay mapping uses one device_id:channel:name entry per line. Leave UID empty to discover it from the gateway.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "uid": "Gateway UID",
+          "relays": "Relay mapping"
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigure Schideron",
+        "description": "Update the gateway address or relay mapping.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "uid": "Gateway UID",
+          "relays": "Relay mapping"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect or retrieve gateway status.",
+      "invalid_relay_mapping": "Relay mapping is invalid. Use device_id:channel:name, one per line."
+    },
+    "abort": {
+      "already_configured": "This gateway is already configured.",
+      "wrong_gateway": "The new address belongs to a different gateway."
+    }
+  }
+}
+

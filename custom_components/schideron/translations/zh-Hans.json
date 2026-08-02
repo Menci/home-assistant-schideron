@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "连接施德朗中控",
+        "description": "继电器映射每行使用 device_id:channel:name。UID 留空时从中控发现。",
+        "data": {
+          "host": "主机",
+          "port": "端口",
+          "uid": "中控 UID",
+          "relays": "继电器映射"
+        }
+      },
+      "reconfigure": {
+        "title": "重新配置施德朗",
+        "description": "更新中控地址或继电器映射。",
+        "data": {
+          "host": "主机",
+          "port": "端口",
+          "uid": "中控 UID",
+          "relays": "继电器映射"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "无法连接中控或读取状态。",
+      "invalid_relay_mapping": "继电器映射无效。每行应为 device_id:channel:name。"
+    },
+    "abort": {
+      "already_configured": "该中控已配置。",
+      "wrong_gateway": "新地址属于另一个中控。"
+    }
+  }
+}
+
